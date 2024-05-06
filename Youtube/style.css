@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    position: relative;
+    background: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+.toggle-btn {
+    width: 20px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 20px; /* Adjusted margin */
+}
+
+.toggle-btn span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #979979;
+}
+
+.toggle-btn span:nth-child(1) {
+    top: 0; /* Adjusted position */
+}
+
+.logo {
+    height: 30px;
+    margin-right: 30px;
+}
+
+.search-box {
+    width: 50%;
+    max-width: 500px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1;
+    height: 100%;
+    border: 2px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.search-btn {
+    width: 35px;
+    height: 35px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn img {
+    height: 60%; /* Adjusted height for the search icon */
+}
+
+.user-options {
+    height: 35px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.user-options .icon {
+    height: 80%;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.user-dp {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-dp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-bar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    min-width: 250px;
+    height: calc(100vh - 60px);
+    background: #fff;
+    padding-left: 10px;
+    display: none;
+    z-index: 999;
+}
+
+.links {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-transform: capitalize;
+    color: #242424;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.links img {
+    height: 25px;
+    margin-right: 20px;
+}
+
+.show {
+    display: block !important;
+}
+
+.links:hover,
+.links.active {
+    background: rgba(0, 0, 0, .1);
+}
+
+.seperator {
+    border: none;
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin: 20px 0;
+}
+
+.filters {
+    position: fixed;
+    left: 250px; /* Adjusted position */
+    top: 60px;
+    width: calc(100% - 300px); /* Decreased width */
+    height: 60px;
+    background: #fff;
+    border-top: 1px solid #dbddbd;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-radius: 30px; /* Rounded edges */
+    gap: 10px; /* Padding between buttons */
+}
+
+.filters::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.filter-options {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded edges */
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.filter-options:hover {
+    background-color: #ccc;
+}
+.filter-options.active {
+    color: #fff;
+    background: #242424;
+}
+/*video-content*/
+.video-container{
+    width: calc(100%-250px);
+    margin-top: 120px;
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 20px 5px;
+    overflow-x: hidden;
+
+}
+.video{
+    min-height: 250px;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 1rem;
+}
+.thumbnail{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+/*16:56*/
+.content {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.channel-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1;
+
+}
+.title{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+.channel-name{
+    font-size: 14px;
+    margin: 2px 0;
+    color: #979797;
+    
+}
+/*code written by pinnam devendra gupta*/
